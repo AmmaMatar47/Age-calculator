@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/JavaScript" src=" https://MomentJS.com/downloads/moment.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/age-icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="age-calculator">
+      <form class="date-specifications">
+        <label class="input-fields">
+          DAY
+          <input type="number" min="1" max="31" name="day" placeholder="DD" id="day-input" />
+        </label>
+
+        <label class="input-fields">
+          MONTH
+          <input type="number" min="1" max="12" name="month" placeholder="MM" id="month-input" />
+        </label>
+
+        <label class="input-fields">
+          YEAR
+          <input type="number" name="year" placeholder="YYYY" id="year-input" />
+        </label>
+      </form>
+      <hr />
+
+      <section class="values">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 40" class="icon">
+          <g fill="none" stroke="hsl(0, 0%, 100%)" stroke-width="2">
+            <path
+              d="M1 22.019C8.333 21.686 23 25.616 23 56M23 56V0M45 22.019C37.667 21.686 23 25.616 23 56"
+            />
+          </g>
+        </svg>
+        <span class="results results-years">--</span> years<br />
+
+        <span class="results results-months">--</span> months<br />
+
+        <span class="results results-days">--</span> days
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

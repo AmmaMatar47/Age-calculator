@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  font-family: Poppins;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.age-calculator {
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px;
+  border-radius: 18px 18px 120px;
+  width: 500px;
+  /* margin: auto; */
+}
+
+/* Date input field */
+
+.date-specifications {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.input-fields {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+  font-weight: 700;
+  caret-color: #1971c2;
+  position: relative;
+}
+
+input {
+  position: relative;
+  width: 96px;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 8px;
+  padding: 10px 0 10px 10px;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 6px;
+}
+
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input:focus {
+  outline-color: #1971c2;
+}
+
+/* solution section */
+
+hr {
+  border: solid 1px hsl(0, 0%, 86%);
+}
+.icon {
+  height: 62px;
+  width: 62px;
+  padding: 18px 18px;
+  position: absolute;
+  background-color: #1971c2;
+  border-radius: 50%;
+  display: inline;
+  right: -12px;
+  top: -56px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.icon:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.values {
+  font-size: 58px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.2;
+  position: relative;
+  margin-top: 26px;
+}
+
+.results {
+  color: #1971c2;
+}
+
+/* functionality */
+
+.empty-input,
+.invalid-input-day,
+.invalid-input-month,
+.invalid-input-year {
+  position: absolute;
+  bottom: -18px;
+  font-size: 7px;
+  width: 120px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+}
+
+.invalid-label {
+  color: hsl(0, 100%, 67%);
+}
+
+.invalid-input {
+  border-color: hsl(0, 100%, 67%);
+}
+
+@media (max-width: 550px) {
+  .age-calculator {
+    width: 90vw;
+    padding: 42px 30px;
+  }
+  .date-specifications {
+    margin-bottom: 60px;
+    gap: 14px;
+  }
+  .values {
+    font-size: 46px;
+    margin-top: 56px;
+  }
+  .icon {
+    right: 50%;
+    top: -86px;
+    transform: translateX(50%);
+  }
+  .input-fields input {
+    width: 22vw;
+  }
+}
